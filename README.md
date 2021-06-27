@@ -13,3 +13,23 @@ npm install
 
 # run automation
 npx cypress run ./cypress/integration/aritable/signup.spec.js
+
+
+├── README.md
+├── cypress
+│   ├── fixtures
+│   │   └── example.json
+│   ├── integration
+│   │   └── airtable
+│   │       └── signup.spec.js
+│   ├── plugins
+│   │   └── index.js
+│   ├── support
+│   │   ├── commands.js
+│   │   └── index.js
+│   └── videos
+│       └── aritable
+│           └── signup.spec.js.mp4
+├── cypress.json
+├── package-lock.json
+└── package.json
