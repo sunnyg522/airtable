@@ -1,0 +1,11 @@
+{
+  "name": "airtable",
+  "version": "1.0.0",
+  "description": "Take Home test for Dinesh",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "Dinesh Gunda",
+  "license": "ISC"
+}
