@@ -4,8 +4,13 @@
   "description": "Take Home test for Dinesh",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test":"npx cypress run ./cypress/integration/aritable/signup.spec.js"
   },
   "author": "Dinesh Gunda",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cypress":"7.6.0",
+    "@testing-library/cypress":"latest"
+  }
 }
