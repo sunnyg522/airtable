@@ -8,13 +8,16 @@ git clone git@github.com:sunnyg522/airtable.git
 # Install dependencies
 
 Make sure you have latest version of node and then run following command
-
+```bash
 npm install
+```
 
 # run automation
+```bash
 npx cypress run ./cypress/integration/aritable/signup.spec.js
+```
 
-
+```bash
 ├── README.md
 ├── cypress
 │   ├── fixtures
@@ -33,3 +36,4 @@ npx cypress run ./cypress/integration/aritable/signup.spec.js
 ├── cypress.json
 ├── package-lock.json
 └── package.json
+```
