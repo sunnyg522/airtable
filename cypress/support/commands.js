@@ -66,6 +66,15 @@ Cypress.Commands.add('verifyCollabrator',(email)=>{
         if($value === email)
           expect($value).equals(email)
       })
+      //loop across all the section and check if its collabrator and then assert
+      cy.get('section[role="list"]').each((item, index)=>{
+                var getCurrentCollab = cy.get('section[role="list"] > .py1 > :nth-child(1) > .ml1 > .strong').eq(index).value
+                var getCurrentRights = cy.get('section[role="list"] > .py1 > :nth-child(3) > :nth-child(1) > .selectMenu > .focus-container > .items-center > .flex-auto').eq(index).value
+                if(email === getCurrentCollab){
+                    expect(getCurrentCollab).equals(email)
+                    expect(getCurrentCollab).equals("Editor")
+                }
+          })
 })
 
 //Command to add collabrator during onboarding process
